@@ -19,7 +19,7 @@ return function (App $app) {
         return $response;
     });
 
-    $app->post("/login", [LoginController::class, "login"]);
+    $app->post("/login", [LoginController::class, "login"]); 
 
     $app->post('/register', [RegisterController::class, "register"]);
 
